@@ -1,0 +1,24 @@
+.content-grid {
+    $max-content-width: 75rem;
+    $padding: 2rem;
+
+
+    display: grid;
+    grid-template-columns: minmax($padding, 1fr) [content-start] min(100% - ($padding * 2), $max-content-width) [content-end] minmax($padding, 1fr);
+}
+
+.content-grid > * {
+    grid-column: content;
+}
+
+.grid-flow-sm {
+    display: grid;
+    gap: 1rem;
+}
+
+.full-height {
+    display: grid;
+    grid-template-rows: auto 1fr; 
+    align-items: center;
+    min-height: 100vh;
+}

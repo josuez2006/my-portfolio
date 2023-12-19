@@ -1,0 +1,14 @@
+
+$directions: (top, left, bottom, right);
+
+@each $direction in $directions {
+    
+    @each $number, $value in $spaces {
+    
+        .margin-#{$direction}-#{$number} {
+            margin-top: $value;
+        }
+    
+    }
+
+}
