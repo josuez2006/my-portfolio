@@ -8,15 +8,36 @@
     width: 100%;
     justify-self: start;
 
-    transition: transform .1s ease-in-out .1s;
+    transition: all 200ms ease-in-out;
 }
 
 .btn:hover {
-    scale: 0.98;
+    scale: 0.95;
+    background-color: $clr-neutral-900;
+    color: $clr-neutral-100;
 }
 
 @media (min-width: $breakpoint-lg) {
     .btn {
         width:  auto;
     }
+}
+
+.btn-with-icon {
+    display: flex;
+    align-items: center;
+    width: auto;
+    gap: .6rem;
+    padding-left: 1rem;
+
+    svg path {
+        fill: $clr-neutral-900;
+        transition: fill 200ms ease-in-out;
+    }
+
+    &:hover svg path {
+        fill: $clr-neutral-100;
+    }
+
+
 }

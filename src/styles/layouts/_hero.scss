@@ -14,14 +14,17 @@
 }
 
 .hero__img {
-    width: min(100%, 25rem);
+    max-width: min(100%, 25rem);
     justify-self: center;
+
+    @media (min-width: $breakpoint-lg) {
+        max-width: 100%;
+    }
 }
 
 
 .hero__content {
     align-self:  center;
-
     display: grid;
     gap: 32px;
 }
@@ -34,4 +37,5 @@
         max-width: 15ch;
         text-transform: uppercase;
     }
+
 }

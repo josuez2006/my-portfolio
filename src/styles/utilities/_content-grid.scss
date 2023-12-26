@@ -1,14 +1,18 @@
-.content-grid {
-    $max-content-width: 75rem;
+.content-grid, .full-width {
+    $max-content-width: 65rem;
     $padding: 2rem;
 
 
     display: grid;
-    grid-template-columns: minmax($padding, 1fr) [content-start] min(100% - ($padding * 2), $max-content-width) [content-end] minmax($padding, 1fr);
+    grid-template-columns: [full-width-start] minmax($padding, 1fr) [content-start] min(100% - ($padding * 2), $max-content-width) [content-end] minmax($padding, 1fr) [full-width-end];
 }
 
-.content-grid > * {
+.content-grid > * , .full-width > * {
     grid-column: content;
+}
+
+.full-width {
+    grid-column: full-width;
 }
 
 .grid-flow-sm {

@@ -1,0 +1,221 @@
+$bg-delay: 300ms;
+$bg-transition: 200ms;
+
+$icon-transition: 200ms;
+$icon-delay: 200ms;
+
+
+.primary-navbar {
+    padding: clamp(2rem, 4vw + 1rem, 2.5rem) 0;
+    min-height: 100px;
+
+    position: sticky;
+    z-index: 2;
+    top: 0;
+
+    background-color: $clr-neutral-100;
+
+    transition: background $bg-transition ease-out $bg-delay,
+                min-height 200ms ease-out 800ms;
+
+    
+    // Position menu and logo on desktop
+    
+    & .container {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__header {
+        width: 100%;
+        align-items: start;
+    }
+    
+    &__logo {
+        max-width: 2.3rem;
+    }
+
+
+    // Disappear button on desktop
+
+    &__btn {
+        display: none;
+    }
+
+
+    // Menu
+
+    &__menu {
+        display: flex;
+        gap: 2rem;
+    }
+
+    &__item {
+        padding: 0.5rem 1rem;
+        transition: color 200ms ease-in,
+                    scale 200ms ease-in-out;
+    }
+
+    &__item:hover {
+        color: $clr-accent-400;
+        scale: 0.9;
+    }
+
+    &__item--active::after {
+        content: '';
+        width: 100%;
+        height: 3px;
+        background-color: $clr-accent-400;
+        position: relative;
+        bottom: -4px;
+        border-radius: 6px;
+    }
+    
+
+
+    // Mobile
+
+    @media (max-width: $breakpoint-md) {
+
+        // Logo color transition
+
+        &__logo path {
+            transition: fill 200ms ease-out $bg-delay + 300ms;
+        }
+
+
+        // Appear button on mobile
+
+        &__btn {
+            display: block;
+        }
+
+
+        // Set button icon
+
+        &__btn .icon {
+            fill: $clr-neutral-900;
+            transition: fill 200ms ease-out $bg-delay;
+        }
+
+
+        // Add icon transitions
+
+        &__btn .icon .line {
+            transition: 
+                y $icon-transition ease-in $icon-delay + $bg-delay,
+                rotate $icon-transition ease-in,
+                opacity 0ms $icon-delay + $bg-delay;
+            transform-origin: center;
+        }
+
+
+        // Position menu
+
+        & .container {
+            display: block;
+        }
+
+        &__menu {
+            position: absolute;
+        }
+        
+        &__item {
+            opacity: 0;
+        }
+    }
+}
+
+
+// Menu expanded on mobile
+
+.primary-navbar[data-expanded=true] {
+    min-height: 100vh;
+
+    background-color: $clr-neutral-900;
+    color: $clr-neutral-100;
+
+    transition: background $bg-transition ease-in $bg-delay,
+                min-height 0ms $bg-delay;
+
+
+    // Set grid
+
+    & > .container {
+        display: grid;
+        grid-template-rows: auto 1fr;
+        grid-template-columns: 1fr;
+    }
+
+
+    // Logo transition
+
+    .primary-navbar__logo path {
+        fill: white;
+        transition: fill 200ms ease-in $bg-delay + $icon-delay * 2;
+    }
+
+
+    // Button transition
+
+    .primary-navbar__btn .icon {
+        fill: $clr-neutral-100;
+        transition: fill 200ms ease-in $bg-delay + 300ms;
+
+        .line {
+            transition: 
+                y $icon-transition ease-in,
+                rotate $icon-transition ease-in $icon-delay + $bg-delay + 200ms,
+                opacity 0ms $icon-delay + $bg-delay + 200ms;
+        }
+
+        #top, #bottom {
+            y: 45;
+        }
+        #top {
+            rotate: 45deg;
+        }
+        #bottom {
+            rotate: -45deg;
+        }
+
+        #middle {
+            opacity: 0;
+        }
+    }
+
+
+    // Menu position and transition
+
+    .primary-navbar__menu {
+        align-self: center;
+        flex-direction: column;
+        align-items: center;
+        gap: 2rem;
+        font-size: 1.6rem;
+        width: 100%;
+        left: 0;
+    }
+    
+    
+    .primary-navbar__item {
+        opacity: 100%;
+        transition: opacity 300ms ease-in;
+    }
+
+    #home-link {
+        transition-delay: 900ms;
+    }
+
+    #about-link {
+        transition-delay: 1000ms;
+    }
+
+    #work-link {
+        transition-delay: 1100ms;
+    }
+
+    #contact-link {
+        transition-delay: 1200ms;
+    }
+}
