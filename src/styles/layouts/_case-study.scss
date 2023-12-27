@@ -1,11 +1,12 @@
 .case-study {
     display: grid;
     gap: 4rem;
-    margin: 60vh 0;
+    margin: 30vh 0;
     
     @media (min-width: $breakpoint-lg) {
         grid-template-columns: 1fr 1fr;
         align-items: center;
+        margin: 60vh 0;
     }
 
     .label {

@@ -38,16 +38,16 @@ function Navbar() {
 
             <ul className='primary-navbar__menu' id='primary-navbar__menu'>
                 <li>
-                    <Link className='primary-navbar__item primary-navbar__item--active' id='home-link'>Home</Link>
+                    <Link className='primary-navbar__item primary-navbar__item--active' id='home-link' to='/'>Home</Link>
                 </li>
                 <li>
-                    <Link className='primary-navbar__item' id='about-link'>About</Link>
+                    <Link className='primary-navbar__item' id='about-link' to='/about'>About</Link>
                 </li>
                 <li>
-                    <Link className='primary-navbar__item' id='work-link'>Work</Link>
+                    <Link className='primary-navbar__item' id='work-link' to='/work'>Work</Link>
                 </li>
                 <li>
-                    <Link className='primary-navbar__item' id='contact-link'>Contact</Link>
+                    <a className='primary-navbar__item' id='contact-link' href='#footer'>Contact</a>
                 </li>
             </ul>
         </div>

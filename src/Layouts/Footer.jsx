@@ -1,6 +1,6 @@
 function Footer() {
   return (
-    <footbar className='footer'>
+    <footer className='footer' id="footer">
         <img src="assets/images/Footbar.svg" alt="" className="footer__img" />
 
         <div className="footer__content">
@@ -23,7 +23,7 @@ function Footer() {
         </div>
 
 
-    </footbar>
+    </footer>
   )
 }
 
