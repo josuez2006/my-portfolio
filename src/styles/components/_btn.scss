@@ -30,6 +30,10 @@
     gap: .6rem;
     padding-left: 1rem;
 
+    * {
+        flex: 1;
+    }
+
     svg path {
         fill: $clr-neutral-900;
         transition: fill 200ms ease-in-out;
