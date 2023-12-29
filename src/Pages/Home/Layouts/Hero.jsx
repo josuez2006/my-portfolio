@@ -1,8 +1,6 @@
-import Navbar from '../Layouts/Navbar'
-
 function Hero() {
   return (
-      <section className="hero">
+      <section className="hero" id="hero">
           <img className='hero__img' src="./assets/images/Hero.svg" alt="" />
 
           <div className="hero__content">

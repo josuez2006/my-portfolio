@@ -4,7 +4,7 @@ import App from './App';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
-  <BrowserRouter basename="/my-portfolio">
+  <BrowserRouter basename="/my-portfolio/">
     <App />
   </BrowserRouter>
 );

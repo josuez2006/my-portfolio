@@ -1,0 +1,35 @@
+.section-breaker {
+    padding: 4rem 0;
+    background-color: $clr-neutral-900;
+    color: $clr-neutral-100;
+
+
+    .title {
+        margin-bottom: 2rem;
+    }
+
+    .paragraph + .paragraph {
+        margin-top: 1.5rem;
+    }
+
+    @media (min-width: $breakpoint-md) {
+        & {
+            padding: 6rem 0;
+        }
+        
+        & > div {
+            max-width: 64ch;
+
+            display: grid;
+            grid-template-columns: auto 1fr;
+            align-items: center;
+            justify-self: center;
+            gap: 4rem;
+        }
+        
+        .title {
+            margin-bottom: 0;
+        }
+    }
+}
+

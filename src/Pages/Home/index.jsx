@@ -1,7 +1,7 @@
-import CaseStudy from '../Layouts/CaseStudy'
-import Footer from '../Layouts/Footer'
-import Hero from '../Layouts/Hero'
-import Navbar from '../Layouts/Navbar'
+import Navbar from '../../Layouts/Navbar'
+import Footer from '../../Layouts/Footer'
+import CaseStudy from './Layouts/CaseStudy'
+import Hero from './Layouts/Hero'
 
 function Home() {
   return (

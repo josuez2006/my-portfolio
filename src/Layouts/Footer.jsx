@@ -1,9 +1,9 @@
 function Footer() {
   return (
-    <footer className='footer' id="footer">
+    <footer className='footer'>
         <img src="assets/images/Footbar.svg" alt="" className="footer__img" />
 
-        <div className="footer__content">
+        <div className="footer__content" id="contact">
             <h2 className="title">Let's design together!</h2>
 
             <div className="footer__icons">
