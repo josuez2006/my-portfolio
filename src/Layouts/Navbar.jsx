@@ -1,7 +1,7 @@
 import { useState } from 'react'
 import { Link } from 'react-router-dom'
 
-function Navbar() {
+function Navbar({ ref }) {
     const [menuExpanded, setMenuExpanded] = useState('false')
 
     const handleLinkCliked = () => {
@@ -11,6 +11,9 @@ function Navbar() {
             navbar.setAttribute('data-expanded', 'false')
             setMenuExpanded('false')
         }
+
+        ref.current.scrollIntoView({behavior: "smooth", block: "end"})           
+
     }
     
     const handleMenuClicked = () => {
@@ -46,7 +49,7 @@ function Navbar() {
 
             <ul className='primary-navbar__menu' id='primary-navbar__menu'>
                 <li onClick={handleLinkCliked}>
-                    <a className='primary-navbar__item primary-navbar__item--active' href='#hero'>Home</a>
+                    <Link className='primary-navbar__item primary-navbar__item--active' to='/'>Home</Link>
                 </li>
                 <li>
                     <Link className='primary-navbar__item' id='about-link' to='/about'>About</Link>
