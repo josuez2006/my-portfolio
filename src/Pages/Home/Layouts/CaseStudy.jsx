@@ -11,7 +11,7 @@ function CaseStudy() {
             <p className="label">Fur-ever Rehome Foundation</p>
             <h2 className="title" id="case-study-title">Building a worldwide app design to adopt rescued dogs</h2>
             <p className="paragraph">It’s time to find those dogs a new home and make a difference in the world.</p>
-            <button className="btn"><Link to='/work/fur-ever'>View Project</Link></button>
+            <button className="btn"><Link to='/work'>View Project</Link></button>
         </div>
     </section>
   )

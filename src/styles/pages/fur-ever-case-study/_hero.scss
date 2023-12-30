@@ -1,0 +1,77 @@
+.case-study-hero {
+    display: grid;
+    gap: 4rem;
+    padding: 1rem 0 4rem 0;
+
+
+    .intro {
+        @media (min-width: $breakpoint-md) {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            align-items: center;
+        }
+        
+        @media (max-width: $breakpoint-md) {
+            &__img {
+                display: none;
+            }
+
+            & {
+                padding-top: 0;
+            }
+        }
+
+        &__header {
+            display: grid;
+            gap: 1rem;
+
+            .foundation-name {
+                text-transform: uppercase;
+            }
+        }
+
+
+        &__img {
+            max-width: 60%;
+            justify-self: center;
+        }
+    }
+
+    .overview {
+        display: grid;
+        gap: 2rem;
+
+        @media (min-width: 600px) {
+            grid-template-columns: 1fr 1fr;
+        }
+
+        @media (min-width: 744px) {
+            grid-template-columns: 1fr 1fr 1fr;
+        }
+    }
+}
+
+.overview-item {
+    display: flex;
+    gap: 1rem;
+    
+    .icon {
+        background-color: $clr-neutral-900;
+        border-radius: 8px;
+        display: grid;
+        place-items: center;
+        min-width: 64px;
+        aspect-ratio: 1;
+        padding: 1rem;
+        
+        img {
+            max-height: 24px;
+        }
+    }
+
+    .content {
+        display: flex;
+        flex-direction: column;
+        gap: .5rem;
+    }
+}

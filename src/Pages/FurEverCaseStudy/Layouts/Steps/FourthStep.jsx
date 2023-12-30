@@ -2,7 +2,7 @@ import StepHeader from "./StepHeader"
 
 function FourthStep() {
   return (
-    <section aria-label="Fourth step of my approach">
+    <section className='full-width' aria-label="Fourth step of my approach">
         <StepHeader step_number='Fourth' step_name='Test' />
 
         <section aria-label="Usability testing">

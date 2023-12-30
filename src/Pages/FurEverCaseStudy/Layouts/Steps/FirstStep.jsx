@@ -2,7 +2,7 @@ import StepHeader from "./StepHeader"
 
 function FirstStep() {
   return (
-    <section>
+    <section className="full-width">
         <StepHeader step_number='First' step_name='Understand' />
 
         <section aria-label="Competior analysis">

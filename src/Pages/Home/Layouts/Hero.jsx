@@ -1,3 +1,4 @@
+import LinkAsButton from '../../../Components/LinkAsButton'
 
 function Hero({ heroRef }) {
 
@@ -11,7 +12,7 @@ function Hero({ heroRef }) {
               <h1 className="heading"><span className="fw-regular">Design is</span> communication</h1>
               <p className="paragraph">My name’s Josue and I’m a great communicator</p>
             </div>
-            <button className="btn">see my work</button>
+            <LinkAsButton to='/work'>See my work</LinkAsButton>
           </div>
       </section>
 
