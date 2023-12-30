@@ -1,0 +1,11 @@
+.view-figma-file {
+    display: flex;
+    flex-direction: column;
+    gap: 2.5rem;
+
+    @media (min-width: $breakpoint-md) {
+        flex-direction: row;
+        gap: 6rem;
+        
+    }
+}

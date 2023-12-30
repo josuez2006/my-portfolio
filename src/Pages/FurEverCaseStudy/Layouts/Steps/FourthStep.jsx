@@ -5,7 +5,7 @@ function FourthStep() {
     <section className='full-width' aria-label="Fourth step of my approach">
         <StepHeader step_number='Fourth' step_name='Test' />
 
-        <section aria-label="Usability testing">
+        <section className="section" aria-label="Usability testing">
 
             <div>
                 <h4 className="title">Usability testing</h4>
