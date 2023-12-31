@@ -29,6 +29,8 @@ $icon-delay: 200ms;
 
     &__header {
         width: 100%;
+        display: flex;
+        justify-content: space-between;
         align-items: start;
     }
     
@@ -220,4 +222,14 @@ $icon-delay: 200ms;
     #contact-link {
         transition-delay: 1000ms;
     }
+}
+
+
+.primary-navbar {
+    transition: transform 200ms ease-in;
+}
+
+.primary-navbar[aria-hide=true] {
+    transform: translateY(-100%);
+    transition: transform 200ms ease-out;
 }

@@ -10,7 +10,7 @@ function Hero() {
           <div className="group-gap-xl | hero__content">
 
             <header className="text-gap-md">
-              <p className="label">Hey , my name's Josué 👋</p>
+              <p className="label">Hey, my name's Josué 😄</p>
 
               <div className="text-gap-md">
                 <h1 className="heading uppercase ">I <span className="clr-accent-400">love</span> solving root problems</h1>

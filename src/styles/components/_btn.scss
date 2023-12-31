@@ -3,10 +3,9 @@
     font-weight: $fw-bold;
     color: $clr-neutral-900;
     border: 2px solid $clr-neutral-900;
-    padding: 0.6em 2rem;
+    padding: 1em 2rem;
     border-radius: 8px;
     width: 100%;
-    flex: 1;
     justify-self: start;
 
     transition: all 200ms ease-in-out;
@@ -18,9 +17,10 @@
     color: $clr-neutral-100;
 }
 
-@media (min-width: $breakpoint-lg) {
+@media (min-width: 940px) {
     .btn {
         width:  auto;
+        padding: 0.8rem 2rem;
     }
 }
 
@@ -29,10 +29,6 @@
     align-items: center;
     gap: .8rem;
     padding-left: 0.8rem;
-
-    svg {
-        width: auto;
-    }
 
     svg path {
         fill: $clr-neutral-900;

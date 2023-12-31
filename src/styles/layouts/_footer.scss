@@ -1,7 +1,8 @@
 .footer {
     display: grid;
     gap: 4rem;
-    margin-bottom: 20vh;
+    margin-bottom: 160px;
+    margin-top: 160px;
     
     @media (min-width: $breakpoint-lg) {
         grid-template-columns: auto 1fr;
@@ -19,18 +20,12 @@
     }
 }
 
-.footer__content {
-    display: grid;
-    gap: 3rem;
-}
-
 .footer__icons {
     display: flex;
     gap: 1.5rem;
     
     @media (max-width: $breakpoint-lg) {
         flex-direction: column;
-        // align-items: start;
     }
 }
 

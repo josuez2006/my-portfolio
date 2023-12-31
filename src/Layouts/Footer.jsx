@@ -3,8 +3,8 @@ function Footer() {
     <footer className='footer'>
         <img src="assets/images/Footbar.svg" alt="" className="footer__img" />
 
-        <div className="footer__content" id="contact">
-            <h2 className="title">Let's design together!</h2>
+        <div className="group-gap-xl | footer__content" id="contact">
+            <h2 className="title">Let's design <span className="clr-accent-400">together</span>!</h2>
 
             <div className="footer__icons">
                 <button className="btn btn-with-icon">

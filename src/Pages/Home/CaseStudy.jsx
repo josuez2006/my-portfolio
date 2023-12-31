@@ -8,7 +8,7 @@ function CaseStudy() {
             <img src="./assets/images/case-study-1.png" alt="Mobile app" />
         </div>
 
-        <div className="group-gap-lg">
+        <div className="group-gap-xl">
 
             <div className="text-gap-md">
             <p className="label">Fur-ever Rehome Foundation</p>

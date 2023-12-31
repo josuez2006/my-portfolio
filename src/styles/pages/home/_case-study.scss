@@ -1,7 +1,7 @@
 .case-study {
     // margin: 15vh 0;
     
-    @media (min-width: $breakpoint-lg) {
+    @media (min-width: 940px) {
         grid-template-columns: 1fr 1fr;
         align-items: center;
         // margin: 30vh 0;
