@@ -2,7 +2,6 @@
     display: grid;
     gap: 4rem;
     margin-bottom: 160px;
-    margin-top: 160px;
     
     @media (min-width: $breakpoint-lg) {
         grid-template-columns: auto 1fr;
