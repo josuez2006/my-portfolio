@@ -26,12 +26,11 @@
 .btn-with-icon {
     display: flex;
     align-items: center;
-    width: auto;
-    gap: .6rem;
-    padding-left: 1rem;
+    gap: .8rem;
+    padding-left: 0.8rem;
 
-    * {
-        flex: 1;
+    svg {
+        width: auto;
     }
 
     svg path {
@@ -42,6 +41,4 @@
     &:hover svg path {
         fill: $clr-neutral-100;
     }
-
-
 }

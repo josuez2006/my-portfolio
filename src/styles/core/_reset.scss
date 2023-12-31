@@ -23,6 +23,7 @@ a {
   text-decoration: none;
   color:inherit;
   font-size:inherit;
+  scroll-behavior: smooth;
 }
 /* ... excepto los que se encuentran en párrafos */
 p a {

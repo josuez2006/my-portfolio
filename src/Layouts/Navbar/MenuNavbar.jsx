@@ -4,7 +4,7 @@ function MenuNavbar({closeMenu}) {
   return (
     <ul className='primary-navbar__menu' id='primary-navbar__menu'>
         <li>
-            <Link className='primary-navbar__item primary-navbar__item--active' to='/'>Home</Link>
+            <Link className='primary-navbar__item primary-navbar__item--active' id='home-link' to='/'>Home</Link>
         </li>
         <li>
             <Link className='primary-navbar__item' id='about-link' to='/about'>About</Link>
