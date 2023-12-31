@@ -1,3 +1,34 @@
+$spacings: (
+    'sm': 8px,
+    'md': 16px,
+    'lg': 24px,
+    'xl': 32px
+);
+
+@each $name, $size in $spacings {
+
+    .text-gap-#{$name} {
+        display: flex;
+        flex-direction: column;
+        gap: $size;
+    }
+
+
+    .group-gap-#{$name} {
+        display: flex;
+        flex-direction: column;
+        gap: $size;
+
+        @media (min-width: $breakpoint-md) {
+            align-items: start;
+        }
+    }
+}
+
+
+// Flexible Spacings
+
+
 $spacings-mobile: (
     'sm': 8px,
     'md': 16px,
@@ -13,23 +44,53 @@ $spacings-desktop: (
 
 @each $name, $size in $spacings-mobile {
 
-    .text-gap-#{$name} {
+    .text-gap-#{$name}-flexible {
         display: flex;
         flex-direction: column;
         gap: $size;
     }
 
+
+    .group-gap-#{$name}-flexible {
+        display: flex;
+        flex-direction: column;
+        gap: $size;
+    }
 }
 
 
 @each $name, $size in $spacings-desktop {
 
-    @media (min-width: $breakpoint-lg) {
-        .text-gap-#{$name} {
+    @media (min-width: $breakpoint-md) {
+        .text-gap-#{$name}-flexible {
+            display: flex;
+            flex-direction: column;
+            gap: $size;
+        }
+
+        .group-gap-#{$name}-flexible {
             display: flex;
             flex-direction: column;
             gap: $size;
         }
     }
 
+}
+
+
+
+$section-spacing-mobile: 64px;
+$section-spacing-desktop: 64px;
+
+.section-gap {
+    display: grid;
+    gap: $section-spacing-mobile;
+
+    @media (min-width: $breakpoint-md) {
+        gap: $section-spacing-desktop;
+    }
+}
+
+.section-padding {
+    padding: 160px 0;
 }

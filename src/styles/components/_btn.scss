@@ -3,9 +3,10 @@
     font-weight: $fw-bold;
     color: $clr-neutral-900;
     border: 2px solid $clr-neutral-900;
-    padding: 0.8em 2rem;
+    padding: 0.6em 2rem;
     border-radius: 8px;
     width: 100%;
+    flex: 1;
     justify-self: start;
 
     transition: all 200ms ease-in-out;

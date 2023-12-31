@@ -1,5 +1,5 @@
-import CaseStudy from './Layouts/CaseStudy'
-import Hero from './Layouts/Hero'
+import CaseStudy from './CaseStudy'
+import Hero from './Hero'
 
 function Home() {
   return (

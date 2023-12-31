@@ -1,16 +1,12 @@
 .hero {
-    display: grid;
-    gap: 4rem;
-    margin-top: 2rem;
-
+    min-height: 74vh;
+    align-content: center;
+    
     @media (min-width: $breakpoint-lg) {
-        grid-template-columns: auto 1fr;
+        grid-template-columns: 1fr 1fr;
         align-items: center;
-
-        & .btn {
-            width: auto;
-        }
     }
+
 }
 
 .hero__img {
@@ -24,18 +20,23 @@
 
 
 .hero__content {
-    align-self:  center;
-    display: grid;
-    gap: 32px;
-}
-
-.hero__text {
-    display: grid;
-    gap: 8px;
-
-    .heading {
-        max-width: 15ch;
-        text-transform: uppercase;
+    @media (min-width: $breakpoint-md) and (max-width: calc($breakpoint-lg - 1px)) {
+        flex-direction: row;
+        align-items: end;
+        justify-content: space-between;
+        
+        
     }
 
+    @media (min-width: $breakpoint-lg) {
+        grid-column: 1 / 2;
+        grid-row: 1 / 2;
+    .heading {
+        max-width: 13ch;
+    }
+    
+    .paragraph {
+        // max-width: 34ch;
+    }
+    }
 }
