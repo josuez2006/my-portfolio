@@ -1,0 +1,35 @@
+$spacings-mobile: (
+    'sm': 8px,
+    'md': 16px,
+    'lg': 32px
+);
+
+$spacings-desktop: (
+    'sm': 8px,
+    'md': 24px,
+    'lg': 40px
+);
+
+
+@each $name, $size in $spacings-mobile {
+
+    .text-gap-#{$name} {
+        display: flex;
+        flex-direction: column;
+        gap: $size;
+    }
+
+}
+
+
+@each $name, $size in $spacings-desktop {
+
+    @media (min-width: $breakpoint-lg) {
+        .text-gap-#{$name} {
+            display: flex;
+            flex-direction: column;
+            gap: $size;
+        }
+    }
+
+}

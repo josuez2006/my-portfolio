@@ -5,14 +5,15 @@ $ff-base: 'Inter';
 
 // Font Sizes
 
-$fs-400: clamp(1rem, 1vw + 0.5rem, 1.25rem);;
-$fs-600: clamp(1.5rem, 1vw + 0.75rem, 1.563rem);;
-$fs-700: clamp(2.488rem, 3vw + 1.25rem, 3.052rem);;
-$fs-800: 2.07375rem;
-$fs-900: clamp(1.953rem, 2vw + 1.5rem, 3rem);;
+$fs-400: clamp(1rem, 1vw + 0.5rem, 1.25rem);
+$fs-600: clamp(1.5rem, 1vw + 0.75rem, 1.563rem);
+$fs-700: clamp(2.488rem, 3vw + 1.25rem, 3.052rem);
+$fs-800: clamp(2.488rem, 3vw + 1.25rem, 3.052rem);
+$fs-900: clamp(1.953rem, 2vw + 1.5rem, 3rem);
 
 $fs-heading: $fs-900;
-$fs-title: $fs-700;
+$fs-title: $fs-800;
+$fs-subtitle: $fs-700;
 $fs-label: $fs-600;
 $fs-body: $fs-400;
 
@@ -20,10 +21,6 @@ $fs-body: $fs-400;
 
 $fw-regular: 400;
 $fw-bold: 700;
-
-.fw-regular {
-    font-weight: $fw-regular;
-}
 
 // Classes
 
@@ -45,6 +42,11 @@ body {
     line-height: 1.1;
 }
 
+.subtitle {
+    font-size: $fs-subtitle;
+    font-weight: $fw-bold;
+}
+
 .label {
     font-size: $fs-label;
     font-weight: $fw-bold;
@@ -54,6 +56,3 @@ body {
     font-size: $fs-body;
     font-weight: $fw-regular;
 }
-
-
-
