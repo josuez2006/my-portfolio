@@ -1,0 +1,22 @@
+.competitor-analysis__content {
+    display: grid;
+    gap: 4rem;
+
+    @media (min-width: $breakpoint-md) {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+
+.competitor-analysis__images {
+    display: none;
+
+    @media (min-width: $breakpoint-md) {
+        display: flex;
+        gap: 1rem;
+
+        img {
+            max-width: calc(50% - 1rem);
+        }
+    }
+}

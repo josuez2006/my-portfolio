@@ -1,44 +1,41 @@
+import TwoColumnContainer from "../TwoColumnContainer"
+import NumberedList from "./NumberedList"
+
 function MyApproach() {
   return (
-    <section className="section | my-approach">
-        <div>
-          <h2 className="title">My aproach</h2>
-          <p className="paragraph">The best way to reach millions of people is throughout their phones. So, I designed an app and I followed this process:</p>
-        </div>
+    <section className="section" aria-label='My approach to tackle the problem'>
 
-        <div className="process">
-            <div className="process__item">
-                <div className="process__number">1</div>
-                <div>
+        <TwoColumnContainer>
+
+            <div className="text-group">
+                <h2 className="title">My aproach</h2>
+                <p className="paragraph">The best way to reach millions of people is throughout their phones. So, I designed an app and I followed this process:</p>
+            </div>
+
+            <NumberedList>
+                <>
                     <p className="label">Understand</p>
                     <p className="paragraph">Define the problem, do the research and analyze the data.</p>
-                </div>
-            </div>
+                </>
 
-            <div className="process__item">
-                <div className="process__number">2</div>
-                <div>
+                <>
                     <p className="label">Think</p>
                     <p className="paragraph">Make the IA, do some sketches and do more sketches.</p>
-                </div>
-            </div>
+                </>
 
-            <div className="process__item">
-                <div className="process__number">3</div>
-                <div>
+                <>
                     <p className="label">Create</p>
                     <p className="paragraph">Build mock-ups and interactive prototypes.</p>
-                </div>
-            </div>
+                </>
 
-            <div className="process__item">
-                <div className="process__number">4</div>
-                <div>
+                <>
                     <p className="label">Test</p>
                     <p className="paragraph">Do the testing, analyze the data and recreate.</p>
-                </div>
-            </div>
-        </div>
+                </>
+            </NumberedList>
+
+        </TwoColumnContainer>
+
     </section>
   )
 }

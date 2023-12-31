@@ -5,8 +5,8 @@ function ThirdStep() {
     <section className='full-width' aria-label="Third step of my approach">
         <StepHeader step_number='Third' step_name='Create' />
 
-        <section>
-            <div>
+        <section className="section">
+            <div className="two-col-grid">
                 <h4 className="title">Mockups and prototypes</h4>
                 <p className="paragraph">As I build the mockup, I make a lot of changes from the initial sketch. For a better productivity and creativity, I prefer to skip wireframing. Here it’s the first prototype created.</p>
             </div>

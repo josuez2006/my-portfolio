@@ -1,0 +1,26 @@
+.numbered-list {
+    display: flex;
+    flex-direction: column;
+    gap: 4rem;
+}
+
+.numbered-list__item {
+    display: grid;
+    grid-template-columns: 5rem 1fr;
+    gap: 1rem;
+
+    & .number {
+        display: grid;
+        place-content: center;
+        font-size: $fs-heading;
+        font-weight: $fw-bold;
+        border-radius: 5px;
+        aspect-ratio: 1;
+        background-color: $clr-neutral-900;
+        color: $clr-neutral-100;
+    }
+
+    .label {
+        margin-bottom: .5rem;
+    }
+}

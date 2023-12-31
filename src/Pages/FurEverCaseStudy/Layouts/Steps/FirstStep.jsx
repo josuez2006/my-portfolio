@@ -1,4 +1,4 @@
-import StepHeader from "../StepHeader"
+import StepHeader from "./StepHeader"
 import CompetitorAnalysis from "./CompetitorAnalysis"
 
 function FirstStep() {

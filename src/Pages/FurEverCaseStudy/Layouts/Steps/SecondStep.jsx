@@ -8,16 +8,16 @@ function SecondStep() {
 
         <div>
 
-            <section>
-                <div>
+            <section className='section'>
+                <div className='two-col-grid'>
                     <h4 className="title">Information architecture</h4>
                     <p className="paragraph">Before creating anything, we need a picture of what we want. So, I made the IA to see the structure of how pages relate to each other. </p>
                 </div>
                 <img src="./assets/images/Fur-Ever/IA.jpg" alt="" />
             </section>
 
-            <section>
-                <div>
+            <section className='section'>
+                <div className='two-col-grid'>
                     <h4 className="title">Sketches</h4>
                     <p className="paragraph">Once we know how the app works, It’s time to sketch possible solutions. Sketches are a great way to get creative and make tons of ideas without constrains.</p>
                 </div>
