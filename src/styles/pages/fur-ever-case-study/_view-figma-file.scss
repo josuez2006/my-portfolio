@@ -2,10 +2,19 @@
     display: flex;
     flex-direction: column;
     gap: 2.5rem;
+    margin-bottom: 6rem;
+    border-bottom: 2px solid $clr-neutral-900;
 
     @media (min-width: $breakpoint-md) {
+        margin-bottom: 8rem;
         flex-direction: row;
         gap: 6rem;
+        align-items: center;
+        justify-content: center;
+
+        .title {
+            max-width: 10ch;
+        }
         
     }
 }
